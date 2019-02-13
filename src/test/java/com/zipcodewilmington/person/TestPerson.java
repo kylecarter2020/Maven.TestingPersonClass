@@ -95,4 +95,76 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetGender() {
+        // Given
+        Person person = new Person();
+        String expected = "M";
+
+        // When
+        person.setGender(expected);
+
+        // Then
+        String actual = person.getGender();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetHeight() {
+        // Given
+        Person person = new Person();
+        int feet = 5;
+        int inches = 5;
+        String expected = "5 Feet 5 Inches";
+
+        // When
+        person.setHeight(feet, inches);
+
+        // Then
+        String actual = person.getHeight();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetPhoneNumber() {
+        // Given
+        Person person = new Person();
+        String expected = "302-555-5555";
+
+        // When
+        person.setPhoneNumber(expected);
+
+        // Then
+        String actual = person.getPhoneNumber();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetRace() {
+        // Given
+        Person person = new Person();
+        String expected = "Hispanic";
+
+        // When
+        person.setRace(expected);
+
+        // Then
+        String actual = person.getRace();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetWeight() {
+        // Given
+        Person person = new Person();
+        int expected = 160;
+
+        // When
+        person.setWeight(expected);
+
+        // Then
+        String actual = person.getWeight);
+        Assert.assertEquals(expected, actual);
+    }
 }
