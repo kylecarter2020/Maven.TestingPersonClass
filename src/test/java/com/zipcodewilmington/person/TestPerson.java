@@ -158,13 +158,13 @@ public class TestPerson {
     public void testSetWeight() {
         // Given
         Person person = new Person();
-        int expected = 160;
+        Integer expected = 160;
 
         // When
         person.setWeight(expected);
 
         // Then
-        String actual = person.getWeight();
+        Integer actual = person.getWeight();
         Assert.assertEquals(expected, actual);
     }
 }

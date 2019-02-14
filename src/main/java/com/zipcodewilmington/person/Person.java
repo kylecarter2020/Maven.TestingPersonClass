@@ -9,68 +9,81 @@ public class Person {
     private String height;
     private String gender;
     private String phoneNumber;
-    private String getRace;
+    private String race;
     private int weight;
 
     public Person() {
+        this.name = "";
+        this.age = Integer.MAX_VALUE;
     }
 
     public Person(int age) {
+        this.age =age;
     }
 
     public Person(String name) {
+        this.name = name;
     }
 
     public Person(String name, int age) {
+        this.name = name;
+        this.age =age;
     }
 
     public void setName(String name) {
+        this.name = name;
     }
 
     public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {
-        return null;
+        return this.name;
     }
 
     public Integer getAge() {
 
-        return null;
+        return this.age;
     }
 
     public String getGender() {
-        return null;
+        return this.gender;
     }
 
-    public void setGender(String expected) {
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public void setHeight(Integer feet, Integer inches) {
+        this.height = feet.toString() + " Feet " + inches.toString() + " Inches";
     }
 
-    public void setPhoneNumber(String expected) {
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public void setRace(String expected) {
+    public void setRace(String race) {
+        this.race = race;
     }
 
-    public void setWeight(int expected) {
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
     public String getHeight() {
-        return null;
+        return this.height;
     }
 
     public String getPhoneNumber() {
-        return null;
+        return this.phoneNumber;
     }
 
     public String getRace() {
-        return null;
+        return this.race;
     }
 
-    public String getWeight() {
-        return null;
+    public Integer getWeight() {
+        return this.weight;
     }
 }
