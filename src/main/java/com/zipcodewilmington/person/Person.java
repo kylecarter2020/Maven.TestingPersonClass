@@ -6,6 +6,11 @@ package com.zipcodewilmington.person;
 public class Person {
     private String name;
     private int age;
+    private String height;
+    private String gender;
+    private String phoneNumber;
+    private String getRace;
+    private int weight;
 
     public Person() {
     }
@@ -30,6 +35,42 @@ public class Person {
     }
 
     public Integer getAge() {
+
+        return null;
+    }
+
+    public String getGender() {
+        return null;
+    }
+
+    public void setGender(String expected) {
+    }
+
+    public void setHeight(Integer feet, Integer inches) {
+    }
+
+    public void setPhoneNumber(String expected) {
+    }
+
+    public void setRace(String expected) {
+    }
+
+    public void setWeight(int expected) {
+    }
+
+    public String getHeight() {
+        return null;
+    }
+
+    public String getPhoneNumber() {
+        return null;
+    }
+
+    public String getRace() {
+        return null;
+    }
+
+    public String getWeight() {
         return null;
     }
 }

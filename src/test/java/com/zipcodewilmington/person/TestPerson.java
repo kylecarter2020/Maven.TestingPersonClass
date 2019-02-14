@@ -114,8 +114,8 @@ public class TestPerson {
     public void testSetHeight() {
         // Given
         Person person = new Person();
-        int feet = 5;
-        int inches = 5;
+        Integer feet = 5;
+        Integer inches = 5;
         String expected = "5 Feet 5 Inches";
 
         // When
@@ -164,7 +164,7 @@ public class TestPerson {
         person.setWeight(expected);
 
         // Then
-        String actual = person.getWeight);
+        String actual = person.getWeight();
         Assert.assertEquals(expected, actual);
     }
 }
